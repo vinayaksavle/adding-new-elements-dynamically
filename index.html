@@ -1,0 +1,16 @@
+
+<head>
+  <script type="text/javascript" src="../index.js"></script>
+  </head>
+<p id="firstp">
+  This is first paragraph.
+</p>
+<button type="button" onclick="addNote()">Add Note</button>
+<script type= "text/javascript"> 
+function addNote() {
+    var newNode = document.createElement("p");
+    var textMode = document.createTextNode("Appended paragraph");
+    newNode.appendChild(textMode);
+    document.getElementById("firstp").appendChild(newNode);
+  }
+</script>
